@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "260063462476",
+    "firebase_url": "https://bro-finder.firebaseio.com",
+    "project_id": "bro-finder",
+    "storage_bucket": "bro-finder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260063462476:android:ddf29551d2ff597a",
+        "android_client_info": {
+          "package_name": "xxair_forcexx.bro_finder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260063462476-iu1uidkko5mgmi4rfq3a13ds5clqgadi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASaIMEaLVcsa05vlW1h-umKhbFihq_beA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
