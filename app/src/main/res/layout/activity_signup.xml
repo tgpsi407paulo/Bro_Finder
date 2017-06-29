@@ -37,14 +37,63 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginBottom="24dp"
-                android:layout_marginTop="24dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1.58"
                 app:srcCompat="@drawable/bro_finder_logo" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:hint="@string/prompt_name"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textColorHint="#000000"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textIsSelectable="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:hint="@string/prompt_phonenumber"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:textColorHint="#000000"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textIsSelectable="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
                 <AutoCompleteTextView
                     android:id="@+id/email"
@@ -83,36 +132,20 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <GridLayout
+            <Button
+                android:id="@+id/sign_up_button"
+                style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/sign_in_button"
-                    style="?android:textAppearanceSmall"
-                    android:layout_width="170dp"
-                    android:layout_height="56dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/action_sign_in"
-                    android:textColor="#ffffff"
-                    android:textColorLink="@android:color/white"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/sign_up_button"
-                    style="?android:textAppearanceSmall"
-                    android:layout_width="170dp"
-                    android:layout_height="56dp"
-                    android:layout_column="5"
-                    android:layout_marginTop="20dp"
-                    android:layout_row="0"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/action_sign_up"
-                    android:textColor="#ffffff"
-                    android:textColorLink="@android:color/white"
-                    android:textStyle="bold" />
-            </GridLayout>
+                android:layout_height="56dp"
+                android:layout_column="5"
+                android:layout_marginTop="20dp"
+                android:layout_row="0"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/action_sign_up"
+                android:textColor="#ffffff"
+                android:textColorLink="@android:color/white"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>
